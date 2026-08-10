@@ -21,8 +21,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/bertomjr/frontend-mentor/tree/main/qr-code-component](https://github.com/bertomjr/frontend-mentor/tree/main/qr-code-component)
+- Live Site URL: [https://bertomjr.github.io/frontend-mentor/qr-code-component/](https://bertomjr.github.io/frontend-mentor/qr-code-component/)
 
 ## My process
 
@@ -62,9 +62,6 @@ I am proud of the following CSS, because it validated my knowledge of how custom
   --qr-code-background: var(--white);
 }
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
 ### Continued development
 
 Although I am already fairly comfortable with Responsive Design concepts, I did have small complications in completing this project.
