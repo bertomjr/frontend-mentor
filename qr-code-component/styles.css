@@ -34,12 +34,13 @@ body {
   font-family: 'Outfit', sans-serif;
   font-size: 15px;
   display: grid;
-  grid-template-rows: 1fr auto;
+  grid-template-rows: minmax(0, 1fr) auto minmax(0, 1fr);
   background-color: var(--background-color);
   min-height: 100vh;
 }
 
 main {
+  grid-row: 2;
   display: grid;
   place-items: center;
 }
@@ -66,7 +67,7 @@ main {
 
 .qr-code-container img {
   width: 100%;
-  height: 100%;
+  height: auto;
   border-radius: var(--spacing-200);
 }
 
@@ -92,9 +93,59 @@ main {
   padding: 0 var(--spacing-200);
 }
 
-.attribution {
+
+footer {
+  grid-row: 3;
+  align-self: center;
+  width: 100%;
+}
+.attribution {  
   text-align: center;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+  font-size: 1.2rem;
+  background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(
+    90deg,
+    var(--slate-900),
+    var(--slate-500),
+    var(--slate-900),
+    black,
+    black
+  );
+}
+
+.attribution a {
+  display: inline-block;
+  background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(
+    90deg,
+    black,
+    var(--slate-900),
+    var(--slate-500),
+    var(--slate-500),
+    black
+  );
+  background-size: 300% 200%;
+  animation: gradient 2.3s linear infinite;
+  margin-inline: 0.15rem;
+  transition: transform 300ms ease;
+  transform: padding 300ms ease;
+}
+
+.attribution a:hover {
+  transform: scale(1.1);
+  padding: 0.15rem;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
