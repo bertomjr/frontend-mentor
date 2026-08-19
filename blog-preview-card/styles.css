@@ -99,7 +99,6 @@ main {
   border-radius: var(--spacing-50);
   margin-top: var(--spacing-300);
   margin-bottom: var(--spacing-150);
-  border-radius: var(--spacing-50);
 }
 
 .blog-card h1 {
