@@ -1,2 +1,4 @@
-qr-code-component-figma/
-blog-preview-card-figma/
+*-figma/
+.vscode/
+.DS_Store
+Thumbs.db
