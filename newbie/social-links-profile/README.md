@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/bertomjr/frontend-mentor/tree/main/newbie/social-links-profile](https://github.com/bertomjr/frontend-mentor/tree/main/newbie/social-links-profile)
+- Live Site URL: [https://bertomjr.github.io/frontend-mentor/newbie/social-links-profile/](https://bertomjr.github.io/frontend-mentor/newbie/social-links-profile/)
 
 ## My process
 
@@ -90,4 +90,3 @@ I will continue to practice utilizing CSS transitions so that I have a better un
 
 - Frontend Mentor - [@bertomjr](https://www.frontendmentor.io/profile/bertomjr)
 - GitHub - [@bertomjr](https://github.com/bertomjr)
-
