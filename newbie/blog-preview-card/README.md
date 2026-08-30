@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/bertomjr/frontend-mentor/tree/main/blog-preview-card](https://github.com/bertomjr/frontend-mentor/tree/main/blog-preview-card)
-- Live Site URL: [https://bertomjr.github.io/frontend-mentor/blog-preview-card/](https://bertomjr.github.io/frontend-mentor/blog-preview-card/)
+- Solution URL: [https://github.com/bertomjr/frontend-mentor/tree/main/newbie/blog-preview-card](https://github.com/bertomjr/frontend-mentor/tree/main/newbie/blog-preview-card)
+- Live Site URL: [https://bertomjr.github.io/frontend-mentor/newbie/blog-preview-card/](https://bertomjr.github.io/frontend-mentor/newbie/blog-preview-card/)
 
 ## My process
 
