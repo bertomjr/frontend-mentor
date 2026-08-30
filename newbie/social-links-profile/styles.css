@@ -57,6 +57,7 @@ body {
 main {
     display: grid;
     place-items: center;
+    padding: var(--spacing-300);
 }
 
 .profile-card {
@@ -66,6 +67,7 @@ main {
     display: flex;
     flex-direction: column;
     padding: var(--spacing-300);
+    width: min(100%, 24rem);
     border: 1px solid transparent;
     border-radius: var(--spacing-200);
     margin-bottom: var(--spacing-300);
@@ -107,6 +109,7 @@ main {
     color: var(--white);
     text-decoration: none;
     background-color: var(--grey-700);
+    margin-bottom: var(--spacing-150);
     border: 1px solid transparent;
     border-radius: var(--spacing-100);
     padding: var(--spacing-150);
@@ -128,7 +131,7 @@ main {
   font-weight: var(--txt-p1-font-weight);
 }
 
-.txt-p2 {
+.txt-p2, .txt-p2b {
   font-size: var(--txt-p2-size);
   line-height: var(--txt-p2-line-height);
   letter-spacing: var(--txt-p2-letter-spacing);
@@ -136,9 +139,6 @@ main {
 }
 
 .txt-p2b {
-  font-size: var(--txt-p2-size);
-  line-height: var(--txt-p2-line-height);
-  letter-spacing: var(--txt-p2-letter-spacing);
   font-weight: var(--txt-p2b-font-weight);
 }
 
@@ -161,4 +161,10 @@ footer {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 48rem) {
+  .profile-card {
+    padding: var(--spacing-500); /* Desktop: 40px */
+  }
 }
