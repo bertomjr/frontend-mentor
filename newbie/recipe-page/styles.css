@@ -1,0 +1,277 @@
+@font-face {
+  font-family: "Outfit";
+  src:
+    local("Outfit"),
+    url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf) format("truetype");
+  font-weight: 300 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Young Serif";
+  src:
+    local("Young Serif"),
+    url(./assets/fonts/young-serif/YoungSerif-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* Color Palette */
+  --rose-800: #7A284E;
+  --rose-50: #FFF7FB;
+  --stone-900: #312E2C;
+  --stone-600: #5F564D;
+  --stone-150: #E3DDD7;
+  --stone-100: #F3E5D7;
+  --brown-800: #854632;
+  --white: #FFFFFF;
+  
+  /* Typography */
+  --txt-p1-size: 40px;
+  --txt-p1-line-height: 100%;
+  --txt-p1-letter-spacing: 0px;
+  --txt-p1-font-weight: 400;
+
+  --txt-p2-size: 28px;
+  --txt-p2-line-height: 100%;
+  --txt-p2-letter-spacing: 0px;
+  --txt-p2-font-weight: 400;
+  
+  --txt-p3-size: 20px;
+  --txt-p3-line-height: 100%;
+  --txt-p3-letter-spacing: 0px;
+  --txt-p3-font-weight: 600;
+
+  --txt-p4-size: 16px;
+  --txt-p4-line-height: 150%;
+  --txt-p4-letter-spacing: 0px;
+  --txt-p4-font-weight: 400;
+  --txt-p4b-font-weight: 700;
+
+  /* Spacing */
+  --spacing-1600: 128px;
+  --spacing-600: 48px;
+  --spacing-500: 40px;
+  --spacing-400: 32px;
+  --spacing-300: 24px;
+  --spacing-200: 16px;
+  --spacing-150: 12px;
+  --spacing-100: 8px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    color: var(--stone-600);
+    background-color: var(--stone-100);
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: minmax(0, 1fr);
+    }
+
+main {
+    background-color: var(--white);
+    width: 100%;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid transparent;
+    border-radius: var(--spacing-300);
+}
+
+header {
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-top-left-radius: var(--spacing-300);
+        border-top-right-radius: var(--spacing-300);
+    }
+    hgroup {
+        padding: var(--spacing-500) var(--spacing-400) var(--spacing-400) var(--spacing-400);
+
+        h1 {
+            color: var(--stone-900);
+            padding-bottom: var(--spacing-300);
+        }
+
+        p {
+            color: var(--stone-600);
+        }
+    }
+}
+
+.prep-time {
+    border: 1px solid var(--stone-150);
+    background-color: var(--rose-50);
+    justify-content: space-between;
+    margin-inline: var(--spacing-300);
+    padding: var(--spacing-300);
+    border-radius: var(--spacing-150);
+    margin: 0 var(--spacing-400) var(--spacing-400) var(--spacing-400);
+
+    h2 {
+        color: var(--rose-800);
+        padding-bottom: var(--spacing-200);
+    }
+
+    dl {
+        padding-inline-start: var(--spacing-200);
+    }
+
+    dl > div {
+        display: list-item;
+        list-style-position: outside;
+        padding-inline-start: var(--spacing-300);
+    }
+
+    dl > div + div {
+        margin-block-start: var(--spacing-100);
+    }
+
+    dt, dd {
+        display: inline;
+    }
+
+    dt::after {
+        content: " ";
+    }
+
+    dl > div::marker {
+        color: var(--rose-800);
+        font-size: 0.75em;
+    }
+}
+
+.instructions {
+    padding-block: var(--spacing-400);
+
+    h2 {
+        padding-top: var(--spacing-400);
+    }
+    li::marker{
+        font-variant-numeric: normal;
+    }
+}
+
+.ingredients, .instructions {
+    padding: 0 var(--spacing-400) var(--spacing-400) var(--spacing-400);
+    margin-inline: var(--spacing-500);
+    padding-inline: 0;
+}
+
+.ingredients > ul, .instructions > ol {
+    padding-inline-start: var(--spacing-300);
+}
+
+.ingredients > ul li, .instructions > ol li {
+    padding-bottom: var(--spacing-100);
+    padding-left: var(--spacing-200);
+}
+
+.ingredients, .instructions, .nutrition tr:not(:last-child) > * {
+    border-bottom: 1px solid var(--stone-150);
+}
+
+.ingredients > h2, .instructions > h2, .nutrition > h2, .nutrition tr > td, .ingredients ::marker, .instructions li::marker {
+    color: var(--brown-800);
+    font-weight: var(--txt-p4b-font-weight);
+}
+
+.ingredients > h2, .instructions > h2, .nutrition > h2 {
+    padding-bottom: var(--spacing-300);
+}
+
+.nutrition {
+    padding: var(--spacing-400);
+    p {
+        padding-bottom: var(--spacing-300);
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+
+        th {
+            text-align: left;
+            padding: var(--spacing-200) var(--spacing-300);
+        }
+
+        td {
+            padding: var(--spacing-200) var(--spacing-300);
+            text-align: left;
+        }
+    }
+}
+
+.txt-p1 {
+    font-family: "Young Serif", sans-serif;
+    font-size: var(--txt-p1-size);
+    line-height: var(--txt-p1-line-height);
+    letter-spacing: var(--txt-p1-letter-spacing);
+    font-weight: var(--txt-p1-font-weight);
+}
+
+.txt-p2 {
+    font-family: "Young Serif", sans-serif;
+    font-size: var(--txt-p2-size);
+    line-height: var(--txt-p2-line-height);
+    letter-spacing: var(--txt-p2-letter-spacing);
+    font-weight: var(--txt-p2-font-weight);
+}
+
+.txt-p3 {
+    font-family: "Outfit", sans-serif;
+    font-size: var(--txt-p3-size);
+    line-height: var(--txt-p3-line-height);
+    letter-spacing: var(--txt-p3-letter-spacing);
+    font-weight: var(--txt-p3-font-weight);
+}
+
+.txt-p4, .txt-p4b {
+    font-family: "Outfit", sans-serif;
+    font-size: var(--txt-p4-size);
+    line-height: var(--txt-p4-line-height);
+    letter-spacing: var(--txt-p4-letter-spacing);
+    font-weight: var(--txt-p4-font-weight);
+}
+
+.txt-p4b {
+    font-weight: var(--txt-p4b-font-weight);
+}
+
+.attribution {
+    font-size: 0.6875rem; 
+    text-align: center;
+    padding: var(--spacing-400) 0;
+
+    a {
+        color: hsl(228, 45%, 44%)
+    }
+}
+
+@media (min-width: 48rem) {
+  body {
+    background-color: var(--stone-100);
+    padding: var(--spacing-1600) var(--spacing-400);
+  }
+
+  main {
+    max-width: 46rem;
+    justify-self: center;
+  }
+
+  header img {
+    padding: 0;
+    width: calc(100% - 2 * var(--spacing-500));
+    margin: var(--spacing-500) var(--spacing-500) 0;
+    border-radius: var(--spacing-150);
+  }
+}
