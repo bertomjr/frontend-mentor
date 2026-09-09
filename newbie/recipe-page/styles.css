@@ -112,7 +112,6 @@ header {
 .prep-time {
     border: 1px solid transparent;
     background-color: var(--rose-50);
-    justify-content: space-between;
     margin-inline: var(--spacing-300);
     padding: var(--spacing-300);
     border-radius: var(--spacing-150);
@@ -159,7 +158,11 @@ header {
     }
     li::marker{
         font-variant-numeric: normal;
+        font-weight: var(--txt-p4b-font-weight);
     }
+}
+.ingredients ::marker {
+    font-weight: var(--txt-p4b-font-weight);
 }
 
 .ingredients, .instructions {
@@ -183,7 +186,6 @@ header {
 
 .ingredients > h2, .instructions > h2, .nutrition > h2, .nutrition tr > td, .ingredients ::marker, .instructions li::marker {
     color: var(--brown-800);
-    font-weight: var(--txt-p4b-font-weight);
 }
 
 .ingredients > h2, .instructions > h2, .nutrition > h2 {
