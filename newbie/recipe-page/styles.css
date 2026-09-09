@@ -110,7 +110,7 @@ header {
 }
 
 .prep-time {
-    border: 1px solid var(--stone-150);
+    border: 1px solid transparent;
     background-color: var(--rose-50);
     justify-content: space-between;
     margin-inline: var(--spacing-300);
