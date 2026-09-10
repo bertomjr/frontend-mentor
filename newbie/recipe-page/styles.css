@@ -255,7 +255,7 @@ header {
     padding: var(--spacing-400) 0;
 
     a {
-        color: hsl(228, 45%, 44%)
+        color: hsl(228, 45%, 44%);
     }
 }
 
