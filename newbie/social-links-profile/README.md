@@ -47,7 +47,7 @@ Users should be able to:
 
 ### What I learned
 
-This challenge really exposed my gaps in knowledge when it came to CSS transitions. I hard trouble implementing the smooth transition between the grey and green color on the links, but after researching the `transition` property, more specifically `transition-duration` and `transition-timing-function`, I was able to makw the colors transfer smoothly. 
+This challenge really exposed my gaps in knowledge when it came to CSS transitions. I had trouble implementing the smooth transition between the grey and green color on the links, but after researching the `transition` property, more specifically `transition-duration` and `transition-timing-function`, I was able to make the colors transfer smoothly. 
 
 ```css
 .social-links a {
