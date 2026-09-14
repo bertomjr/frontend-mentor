@@ -8,12 +8,12 @@ My implementations of [Frontend Mentor](https://www.frontendmentor.io/) challeng
 
 Challenges are organized by Frontend Mentor difficulty. My current projects are in the [`newbie/`](./newbie/) directory.
 
-| Project | Difficulty | Learning focus |
-| --- | --- | --- |
-| QR code component | Newbie | Card layout, spacing, typography, and responsive sizing |
-| Blog preview card | Newbie | Custom fonts, card composition, and interactive states |
-| Social links profile | Newbie | Semantic links, reusable styles, and responsive layout |
-| Recipe page | Newbie | Content structure, lists, tables, and responsive spacing |
+| Project | Difficulty | Learning focus | Live demo |
+| --- | --- | --- | --- |
+| [QR code component](./newbie/qr-code-component/) | Newbie | Card layout, spacing, typography, and responsive sizing | [View demo](https://bertomjr.github.io/frontend-mentor/newbie/qr-code-component/) |
+| [Blog preview card](./newbie/blog-preview-card/) | Newbie | Custom fonts, card composition, and interactive states | [View demo](https://bertomjr.github.io/frontend-mentor/newbie/blog-preview-card/) |
+| [Social links profile](./newbie/social-links-profile/) | Newbie | Semantic links, reusable styles, and responsive layout | [View demo](https://bertomjr.github.io/frontend-mentor/newbie/social-links-profile/) |
+| [Recipe page](./newbie/recipe-page/) | Newbie | Content structure, lists, tables, and responsive spacing | [View demo](https://bertomjr.github.io/frontend-mentor/newbie/recipe-page/) |
 
 ## What I'm practicing
 
