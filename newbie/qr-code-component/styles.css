@@ -55,12 +55,11 @@ main {
   var(--spacing-200)
   var(--spacing-200)
   var(--spacing-500);
-
   background-color: var(--qr-code-background);
   border-radius: var(--spacing-200);
 }
 
-.qr-code-container a{
+.qr-code-container a {
   display: block;
   width: 100%;
 }
@@ -93,12 +92,12 @@ main {
   padding: 0 var(--spacing-200);
 }
 
-
 footer {
   grid-row: 3;
   align-self: center;
   width: 100%;
 }
+
 .attribution {  
   text-align: center;
   font-size: 1.2rem;
