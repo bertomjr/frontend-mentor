@@ -1,4 +1,21 @@
-*-figma/
+# Local IDE settings
+.idea/
 .vscode/
+
+# macOS folder metadata and extra files from extracted archives
 .DS_Store
+__MACOSX/
+._*
+
+# Windows thumbnail cache
 Thumbs.db
+
+# Downloaded Figma reference folders and files kept locally
+*-figma/
+*.fig
+
+# Editor backup, swap, and recovery files
+*~
+*.swp
+*.swo
+nano.*.save
